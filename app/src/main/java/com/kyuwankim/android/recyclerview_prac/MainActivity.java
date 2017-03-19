@@ -21,11 +21,10 @@ public class MainActivity extends AppCompatActivity {
         datas = data.get();
 
         rv = (RecyclerView) findViewById(R.id.recyclerview);
-        RecyclerAdapter ra = new RecyclerAdapter(datas, R.layout.list_card_item);
+        RecyclerAdapter ra = new RecyclerAdapter(datas, R.layout.list_card_item, this);
         rv.setAdapter(ra);
 
         rv.setLayoutManager(new LinearLayoutManager(this));
-
 
     }
 

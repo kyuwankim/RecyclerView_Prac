@@ -54,4 +54,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 }
 </code>
 </pre>
- 
+
+##Item 설정
+Adapter onBindHolder 부분에서 setOnclickListener를 달아서 설정 할 수 있다
+이때 inetnt를 통해 액티비티를 변경하려면 context 를 통해 넘겨야 하므로 생성자를 호출할 때
+*Context* 선언을 해서 초기화 할 수 있어야 한다
+
+>Context
+>
+>Interface to global information about an application environment. This is an abstract class whose implementation is provided by the Android system. It allows access to application-specific resources and classes, as well as up-calls for application-level operations such as launching activities, broadcasting and receiving intents, etc. 
+>

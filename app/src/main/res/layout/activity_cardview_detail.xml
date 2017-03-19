@@ -1,13 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_cardview_detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E0E0E0"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.kyuwankim.android.recyclerview_prac.CardviewDetail">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardBackgroundColor="#ffffffff"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageview_cardview_detail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tv_list_card_item_detail_subtitle"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/city" />
+
+            <TextView
+                android:id="@+id/tv_list_card_item_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Jeju"
+                android:textColor="#BD264F"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_list_card_item_detail_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_list_card_item_detail_title"
+                android:layout_alignStart="@+id/tv_list_card_item_detail_title"
+                android:layout_below="@+id/tv_list_card_item_detail_title"
+                android:text="South Korea"
+                android:textColor="#25262F"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/tv_list_catd_item_detail_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_list_card_item_detail_title"
+                android:layout_alignStart="@+id/tv_list_card_item_detail_title"
+                android:layout_below="@+id/imageview_cardview_detail"
+                android:layout_marginTop="3dp"
+                android:text="2016년 June 28일"
+                android:textColor="#A1A1A1"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_list_catd_item_detail_day"
+                android:layout_alignStart="@id/tv_list_catd_item_detail_day"
+                android:layout_below="@id/tv_list_catd_item_detail_day"
+                android:layout_marginTop="3dp"
+                android:text="proin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortorposuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sit proin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortorposuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sitproin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortorposuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sitproin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortorposuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sitproin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortorposuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sitproin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortorposuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sitproin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortorposuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sitproin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortorposuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sit"
+                android:textColor="#3F3F3F"
+                android:textSize="8dp" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
 
 </RelativeLayout>
